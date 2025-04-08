@@ -1,0 +1,158 @@
+@use 'vuetify/styles';
+@use 'rz_front_management_system';
+@use 'variables';
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  position: fixed;
+  width: 100%;
+}
+
+body *:not(code, code span) {
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP';
+  user-select: none;
+}
+
+.Code {
+  font-size: 12px;
+  font-family: 'MS ゴシック';
+  padding: 0;
+  code {
+    padding: 0;
+    user-select: text !important;
+  }
+  pre code.hljs {
+    padding: 0 1rem 1rem !important;
+  }
+}
+
+//------------------------------
+// スクロールバー関連
+//------------------------------
+div::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+/*
+div::-webkit-scrollbar-track {
+  // background: #f2f2f2;
+  // border: 1px solid #e5e5e5;
+}
+*/
+div::-webkit-scrollbar-thumb {
+  border-radius: 9px;
+  background-color: rgb(var(--r-color-scroll));
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+div::-webkit-scrollbar-track:horizontal {
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+}
+
+div::-webkit-scrollbar-track:vertical {
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+}
+
+textarea::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: rgb(var(--r-color-scroll));
+  border: 3px solid rgb(var(--r-color-form));
+}
+
+textarea::-webkit-scrollbar-thumb:horizontal {
+  border-left: 3px solid rgb(var(--r-color-form));
+  border-right: 3px solid rgb(var(--r-color-form));
+}
+
+textarea::-webkit-scrollbar-thumb:vertical {
+  border-top: 3px solid rgb(var(--r-color-form));
+  border-bottom: 3px solid rgb(var(--r-color-form));
+}
+
+textarea::-webkit-scrollbar-corner {
+  border-radius: 8px;
+}
+
+textarea::-webkit-resizer {
+  border-radius: 16px;
+}
+
+#modal-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+#float-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.pt-0-5 {
+  padding-top: 2px;
+}
+.mt-0-5 {
+  margin-top: 2px;
+}
+.mt-1-5 {
+  margin-top: 6px;
+}
+.mt-2-5 {
+  margin-top: 10px;
+}
+
+a {
+  color: rgb(var(--r-color-link));
+}
+a:active {
+  color: rgb(var(--r-color-active));
+}
+a:visited {
+  color: rgb(var(--r-color-visited));
+}
+
+.FlexBetween {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.FlexCenter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.FlexStart {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.FlexEnd {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.Center {
+  align-items: center;
+}
+.Bottom {
+  align-items: flex-end;
+}

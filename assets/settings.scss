@@ -1,0 +1,6 @@
+@use 'vuetify/settings' with (
+  $utilities: false,
+  $button-height: 40px,
+  $label-font-size: 12px,
+  $radio-group-label-margin-inline-start: 20px
+);

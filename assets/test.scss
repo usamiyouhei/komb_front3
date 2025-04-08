@@ -1,0 +1,92 @@
+.Contents {
+  position: relative;
+}
+section {
+  position: relative;
+  margin-bottom: 30px;
+  h5 {
+    position: relative;
+    font-size: 14px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    user-select: text;
+    width: 100%;
+  }
+  h6 {
+    position: relative;
+    font-size: 12px;
+    margin: 0 10px 0px;
+    width: 100%;
+  }
+  p {
+    position: relative;
+    font-size: 12px;
+    margin: 0 10px 8px;
+  }
+  .Sample {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px dashed #888;
+    margin: 0 10px 8px;
+    font-size: 12px;
+  }
+  .Flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+ul {
+  margin: 0;
+  font-size: 12px;
+  margin: 0 10px 8px 24px;
+}
+li {
+  margin-bottom: 8px;
+  h6 {
+    margin-left: 0;
+  }
+  p {
+    margin-left: 0;
+  }
+}
+
+.Simulator {
+  .view {
+    position: relative;
+  }
+  .Property {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 200px;
+    height: 100%;
+    border-left: 1px solid #666;
+  }
+}
+
+.label {
+  display: block;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.text1 {
+  font-size: 12px;
+}
+
+.text2 {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#icon {
+  cursor: all-scroll;
+}
